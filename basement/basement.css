@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: rgba(18, 18, 18, 1);
+    color: #fff;
+    zoom: 75%
+}
+
+/* Цвета */
+:root{
+    --white-color: rgba(255, 255, 255, 1);
+    --tealish_blue-color: rgba(0, 102, 255, 1);
+    --black-color: rgba(0, 0, 0, 1);
+    --lineare_tealish_blue-color: rgba(0, 102, 255, 1);
+}
+
+.containerRules{
+    max-width: 1000px;
+    min-height: 1650px;
+    margin: 0 auto;
+}
+
+.containerPolitics{
+    max-width: 1000px;
+    min-height: 3050px;
+    margin: 0 auto;
+}
+
+.containerApproval{
+    max-width: 1000px;
+    min-height: 1250px;
+    margin: 0 auto;
+}
+/* ////////////// */
+
+.circCont{
+    text-align:right;
+    
+}
+.circle{
+    margin-top: 20px;
+    min-width: 50px;    
+    min-height: 50px; 
+    background-color: rgb(248, 0, 0);
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius:7px;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+
+.circle:hover {
+    background: #ff9780;
+}
+
+.txtrules{
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+.h1Rules{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color:rgb(244, 83, 83);
+    margin-bottom: 20px;
+}
+
+.txtAllow{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+.description{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--white-color);
+    margin-bottom: 10px; 
+}
+
+
+.h1Approval{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color:rgb(255, 255, 255);
+    margin-bottom: 20px;   
+}
+
+.txtSog{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color:rgb(154, 153, 153);
+    margin-bottom: 40px;   
+}
+
+
+.txtpage{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--white-color);
+    margin-bottom: 10px; 
+}
+
+
+.txtPol{
+    margin-top: 50px;
+}
+
+.h2Pol{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.txtPolit{
+    margin-top: 20px;  
+}

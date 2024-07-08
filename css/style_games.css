@@ -1,0 +1,725 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: rgba(18, 18, 18, 1);
+    color: #fff;
+    zoom: 75%
+}
+
+/* Цвета */
+:root{
+    --white-color: rgba(255, 255, 255, 1);
+    --tealish_blue-color: rgba(0, 102, 255, 1);
+    --black-color: rgba(0, 0, 0, 1);
+    --lineare_tealish_blue-color: rgba(0, 102, 255, 1);
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////// Page */
+
+.header {
+    min-height: 150px;
+    background-color: black;
+}
+
+.container{
+    max-width: 1593px;
+    margin: 0 auto;
+}
+
+.header__title{
+    max-width: 1593px;
+    margin: 0 auto;
+    padding-top: 27px;
+    margin-bottom: 178px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    min-width: 212.87px;
+    min-height: 43px;
+    cursor: pointer;    
+}
+
+.header__title a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header__title a:hover {
+    color: #646363;
+}
+
+.headbar-tel a{
+    color: var(--white-color);
+    text-decoration:underline;
+}
+
+.header_button{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Кнопка в шапке */
+.booking {
+    min-width: 233px;    
+    min-height:43px; 
+    background-color: var(--tealish_blue-color);
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius:7px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.booking:hover {
+    background: #1d49aa;
+}
+
+.enter_main{
+    min-width: 100px;    
+    min-height: 40px; 
+    background-color: rgba(255, 0, 0, 1);
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius:7px;
+    cursor: pointer;
+    border: none;
+}
+
+.enter_main:hover {
+    background: rgba(255, 0, 0, 0.588);
+}
+
+.exit_main{
+    min-width: 100px;    
+    min-height: 40px; 
+    background-color: rgba(255, 0, 0, 1);
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius:7px;
+    cursor: pointer;
+    border: none;
+}
+
+.exit_main:hover {
+    background: rgba(255, 0, 0, 0.588);
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////// Games */
+
+.games_pg{
+    margin-bottom: 100px;
+}
+
+.about_flex_choice_games{
+    margin-top: 51px;
+    margin-left: 11px;
+    max-width: 1572px;
+    min-height: 76px;
+    background-color: var(--tealish_blue-color);
+    border-radius: 20px;
+}
+
+.about__flex-item-choice_games_info {
+    padding-top: 23px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.txt_choice_games a{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.txt_choice_games a:hover {
+    color: #646363;
+}
+
+
+.about_games {
+    margin-top: 96px;
+    padding-left: 106px;
+    padding-right: 107px;
+}
+
+.about_flex_games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 60px;
+    justify-items: start;
+}
+
+.about__flex-item-games_con {
+    max-width: 300px;
+    min-height: 470px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+
+.games_img{
+    width: 300px;
+    height: 205px;
+    border-radius: 20px 20px 0 0; 
+}
+
+.about__flex-item-games_con-info {
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
+.GenreGames{
+    font-family: 'Arial Black', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px; 
+    color: var(--white-color);
+    margin-bottom: 18px;    
+}
+
+.NumberPlayers{
+    font-family: 'Arial Black', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;  
+    color: var(--white-color);
+    margin-bottom: 18px;  
+}
+
+.NameGames {
+    font-family: 'Arial Bold', sans-serif;
+    font-size: 17.5px;
+    background: linear-gradient(45deg, rgba(0, 102, 255, 1) 70%, rgba(0, 102, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--lineare_tealish_blue-color);
+    display: table;
+    margin-bottom: 19px; 
+}
+
+.DescriptionGames{
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 15px; 
+    color: var(--white-color);
+    text-align: left;
+    padding-right: 10px;
+    margin-bottom: 18px; 
+}
+
+.games_detailed a{
+    font-family: 'Arial Bold', sans-serif;
+    font-size: 14px;
+    color: var(--tealish_blue-color); 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// Кнопка свайпа вверх */
+
+.btUp {
+    position: fixed;
+    bottom: 100px;
+    right: 70px;
+    z-main: 9999;
+    min-width: 70px;    
+    min-height: 70px; 
+    background-color: var(--tealish_blue-color);
+    border-radius:50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; 
+    height: 50px;
+    opacity: 0;
+    border: 0;
+}
+
+
+.Upbtimg{
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.btUp:hover{
+    background: #1d49aa;
+} 
+
+.bt-top--show {
+    opacity: 1;
+}
+
+.modal_r {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+}
+
+.modal-content {
+    position: relative;
+    z-main: 2;
+    min-width:350px;
+    min-height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgb( 0, 0, 0, .4);
+    background-color: var(--black-color);
+}
+
+.modal_r .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #161616;
+    opacity: 0.7;
+    z-main: 0;
+    transition: all .09s ease-out;
+}
+
+.modal_content_flex{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.modReg{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.modReg_txt{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight:6900;
+    font-size: 15px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+#registerYes{
+    margin-right: 20px;
+    min-width:  100px;    
+    min-height: 50px;
+    background-color: var(--lineare_tealish_blue-color);
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;    
+}
+#registerYes:hover {
+    background: #1d49aa;
+}
+
+#registerNo{
+    margin-left: 20px;
+    min-width:  100px;    
+    min-height: 50px;
+    background-color: #ff0000;
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none; 
+}
+#registerNo:hover {
+    background: #b70101;
+}
+
+/* ///////////////////////////////// Modal Applications */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    visibility: hidden;
+}
+
+.modal_application {
+    position: relative;
+    z-main: 2;
+    min-width:550px;
+    min-height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgb( 0, 0, 0, .4);
+    background-color: var(--black-color);
+}
+
+
+.modal .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #161616;
+    opacity: 0.7;
+    z-main: 0;
+    transition: all .09s ease-out;
+}
+
+.modal_bt_close{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bt_close{
+    border: none;
+    background: none;
+    color: #b70101;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    transition: color 0.3s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.bt_close:hover{
+    color: #ff0000;
+    opacity: 1;
+} 
+
+.createApp{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+
+.about_sequence_reg {
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.about_flex_sequence_reg {
+    display: flex;
+}
+
+
+.about__flex-item-sequence_reg {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.txtInput {
+    min-width: 250px;    
+    min-height: 50px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    outline: none;
+}
+
+.txtInputs {
+    min-width: 255px;    
+    min-height: 50px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    outline: none;
+}
+
+.txtInputs::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #7B7A7A;
+}
+
+.txtInputs[type="text"]:focus {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #161616;
+}
+
+.to_send_bt{
+    min-width: 150px;    
+    min-height: 50px;
+    background-color: var(--lineare_tealish_blue-color);
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background 0.3s;
+    cursor: pointer;
+    border: none; 
+}
+
+.to_send_bt:hover {
+    background: #1d49aa;
+}
+
+.txt_data_for_processing{
+    margin-top: 34px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+select {
+    min-width: 255px;    
+    min-height: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0 20px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    outline: none;
+}
+
+select:required:invalid {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #7B7A7A;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+
+#fio_texst, #phone_texst, #kol_people_texst, #visit_texst, #date_text, #time_text{
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.false_texst{
+    color: #ff0000;
+}
+
+.true_texst{
+    color: green;
+}
+
+.false{
+    border: 3px solid #ff0000;
+    /* border: inherit; */
+}
+
+.true{
+    border: 3px solid green;
+    /* border: inherit; */
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////// Basement */
+
+.basement{
+    min-height: 845px; 
+    background: rgba(0, 0, 0, 1);
+}
+
+.h1Contacts{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding-top: 94px; 
+    padding-left: 36px; 
+    margin-bottom: 71px;
+}
+
+.contacts_info{
+    padding-left: 36px; 
+    padding-right: 130px;
+    margin-bottom: 101px;
+}
+
+.about_flex_contacts_info{ 
+    display: flex;
+}
+
+.about__flex-item-contacts_info{
+    max-width: 212px;
+    margin-right: 81px;
+}
+
+.txt_con{
+    margin-top: 40px;
+}
+
+.flex_img{
+    display: flex;
+}
+
+.h3Name{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: var(--white-color);
+    margin-bottom: 14px;
+}
+
+.basement_img{
+    width: 23px; 
+    height: 23px;
+    margin-right: 7px; 
+}
+
+.txt_info {
+    font-family: 'Aria', sans-serif;
+    font-weight: normal;
+    font-size: 15px; 
+    line-height: 22px;
+    color: var(--white-color);
+    margin-bottom: 18px;
+}
+
+.txt_info a{
+    font-family: 'Aria', sans-serif;
+    font-weight: normal;
+    font-size: 15px; 
+    line-height: 22px;
+    color: var(--white-color);
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+.txt_info a:hover {
+    color: #646363;
+}
+
+.yandexmap{
+    width: 550px; 
+    height: 400px;
+    background: var(--white-color);
+}
+
+.hr{
+    width: 1px;
+    margin: 30px auto;
+    border: 1px solid var(--white-color);
+}
+
+.con_detailed_basement_info{
+    text-align:center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.txt_basement_info {
+    font-family: 'Aria', sans-serif;
+    font-weight: normal;
+    font-size: 15px; 
+    line-height: 22px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.txt_basement_info a {
+    font-family: 'Aria', sans-serif;
+    font-weight: normal;
+    font-size: 15px; 
+    line-height: 22px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.txt_basement_info a:hover {
+    color: #646363;
+}
+
+.con_basement_img{
+    display: flex;
+}
+
+.social_network_img{
+    width: 50px; 
+    height: 50px;
+    margin-right: 36px;
+    cursor: pointer;   
+}

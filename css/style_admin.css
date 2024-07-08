@@ -1,0 +1,284 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: rgba(18, 18, 18, 1);
+    color: #fff;
+    zoom: 75%
+}
+
+/* Цвета */
+:root{
+    --white-color: rgba(255, 255, 255, 1);
+    --tealish_blue-color: rgba(0, 102, 255, 1);
+    --black-color: rgba(0, 0, 0, 1);
+    --lineare_tealish_blue-color: rgba(0, 102, 255, 1);
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////// Page */
+
+.header {
+    min-height: 97px;
+    background-color: black;
+    margin-bottom: 80px;
+}
+
+.container{
+    max-width: 1593px;
+    margin: 0 auto;
+}
+
+.header__title{
+    max-width: 1593px;
+    margin: 0 auto;
+    padding-top: 27px;
+    margin-bottom: 178px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.header__title-flex{
+    display: flex;
+    align-items: center;
+}
+
+.Logo {
+    min-width: 212.87px;
+    min-height: 43px;
+    cursor: pointer;
+    margin-right: 558.13px;     
+}
+
+.roleAdmin {
+    margin-right: 45px;
+}
+
+.nameAdmin {
+    margin-right: 73px;
+}
+
+
+/* Кнопка в шапке */
+.buttonExit {
+    min-width: 134px;    
+    min-height:43px; 
+    background-color: rgba(255, 0, 0, 1);
+    color: var(--white-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius:7px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttonExit:hover {
+    background: #b70101;
+}
+
+/* .booking:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+} */
+
+
+/* /////////////////////////////////////////////////////////////////////////////// Page Applications */
+.applications_info{
+    min-height: 983px;
+}
+
+/* ////////////////////////////////////////////////////////////////// Selection Applications True*/
+.selection-applications_info{
+    margin-left: 100px;
+    min-height: 77px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 66px;
+}
+
+.style_applications{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0.05em; 
+    margin-right: 50px;
+}
+
+.style_applications a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.style_applications a:hover {
+    color: #646363;
+}
+
+.selection-applications-phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.selection-applications-date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameSelection {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    margin-bottom: 13px;
+}
+
+.selection-phone { 
+    display: flex;
+}
+
+.txtInputSelection-phone {
+    max-width: 181px;    
+    min-height: 43px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 17px;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    outline: none;
+    margin-right: 17px;
+}
+
+.txtInputSelection-date {
+    max-width: 131px;    
+    min-height: 43px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 19px;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    outline: none;
+    margin-right: 17px;
+}
+
+input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    color: rgba(102, 102, 102, 1);
+}
+
+.buttonFind {
+    max-width: 43px;    
+    max-height:43px; 
+    background-color: var(--tealish_blue-color);
+    border-radius:7px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonFind:hover {
+    background: #b70101;
+}
+
+.Search {
+    width: 43px;
+    height: 43px; 
+    align-self:center;
+}
+/* ///////////////////////////////// Applications */
+
+.applic_list_true{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.applications_list_true{
+    max-width: 1335px;    
+    min-height: 707px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+.name-applications_list_true{
+    padding-top: 43px;
+    margin-left: 107px;
+    margin-right: 45px;
+    display: flex;
+}
+
+.style_name_applications_true{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.applications_list_info-grid_true{
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 40px;
+}
+
+.list_application_info_true{
+    display: grid;
+    grid-template-columns: 200px 200px 150px 180px 150px 85px 102px 75px;    
+    gap: 0px 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.style_applic_true{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.email-name_true {
+    margin-right: 180px;
+}
+
+.fio-name_true {
+    margin-right: 142px;
+}
+
+.phone-name_true {
+    margin-right: 85px;
+}
+
+.visiting-name_true {
+    margin-right: 68px;
+}
+.quantity-name_true {
+    margin-right: 60px;
+}
+.date-name_true {
+    margin-right: 63px;
+}
